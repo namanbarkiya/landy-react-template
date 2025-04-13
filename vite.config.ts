@@ -6,6 +6,9 @@ export default defineConfig({
     plugins: [react()],
     publicDir: "public",
     server: {
+        hmr: {
+            overlay: false,
+        },
         watch: {
             usePolling: true,
         },
